@@ -1,51 +1,51 @@
-# Code khoá luận tốt nghiệp
+# Graduation Thesis Code
 
-## 1. Khung chương trình
+## 1. Program Framework
 
-### 1.1. Mô tả
+### 1.1. Description
 
-- Chương trình sử dụng ngôn ngữ lập trình Python, được chuyển thể từ chương trình matlab của bài báo gốc
+- The program is written in Python and adapted from the original MATLAB version in the referenced research paper.
 
-### 1.2. Cài đặt
+### 1.2. Installation
 
-- Cài đặt các thư viện cần thiết: numpy, matplotlib, scipy, pandas, sklearn
+- Install the required libraries: `numpy`, `matplotlib`, `scipy`, `pandas`, `sklearn`
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 1.3. Sử dụng
+### 1.3. Usage
 
-- Chạy chương trình
+- Run the program:
 
 ```bash
 python main.py
 ```
 
-### 1.4. Cấu trúc file main
+### 1.4. Main File Structure
 
-- Gồm có 4 phần chính:
+- The program consists of 4 main parts:
 
-  - Phần 1: Khởi tạo dữ liệu, Thiết lập các tham số đầu vào
-  - Phần 2: Sử dụng các thuật toán từ thư viện để tìm vị trí cho các UAV
-  - Phần 3: Tính toán các thông số cần thiết dựa theo công thức trong bài báo
-  - Phần 4: Hiển thị kết quả ra terminal và vẽ đồ thị
+  - **Part 1**: Initialize data and set input parameters  
+  - **Part 2**: Use algorithms from libraries to determine the positions of UAVs  
+  - **Part 3**: Calculate necessary parameters based on formulas from the research paper  
+  - **Part 4**: Display results in the terminal and visualize with plots
 
-### 1.5. Các file chính
+### 1.5. Key Files
 
-- main.py: File chính chứa toàn bộ chương trình
-- generate_uniform_data.py: Tạo dữ liệu ngẫu nhiên theo phân phối đều
-- k_means_centroids.py: Tìm vị trí các UAV bằng thuật toán KMeans
-- k_medoids_centroids.py: Tìm vị trí các UAV bằng thuật toán KMedoids
-- minibatch_k_means_centroids.py: Tìm vị trí các UAV bằng thuật toán MiniBatchKMeans
-- optimize_pow_height_cluster.py: Tìm công suất và chiều cao và một số tham số tối ưu khác của UAV
-- plot_all_UAV_ranges.py: Vẽ đồ thị biểu diễn vị trí các UAV và phạm vi hoạt động của chúng
-- plot_range_with_density.py: Vẽ đồ thị biểu diễn phạm vi hoạt động của các UAV và mật độ của các điểm dữ liệu
+- `main.py`: The main script that runs the entire program  
+- `generate_uniform_data.py`: Generates random data using a uniform distribution  
+- `k_means_centroids.py`: Determines UAV positions using the KMeans algorithm  
+- `k_medoids_centroids.py`: Determines UAV positions using the KMedoids algorithm  
+- `minibatch_k_means_centroids.py`: Determines UAV positions using the MiniBatchKMeans algorithm  
+- `optimize_pow_height_cluster.py`: Optimizes UAV parameters such as power, height, and other variables  
+- `plot_all_UAV_ranges.py`: Plots UAV positions and their coverage areas  
+- `plot_range_with_density.py`: Plots UAV coverage areas along with the density of data points
 
-## 2. Chú thích
+## 2. Notes
 
-- File uniform_data.npy: Dữ liệu ngẫu nhiên theo phân phối đều để đánh giá khách quan hơn về hiệu suất của các thuật toán. Tránh trường hợp dữ liệu ngẫu nhiên
-- File minibatch_draw.py để vẽ các bước thực hiện phân cụm và tìm vị trí UAV bằng thuật toán MiniBatchKMeans trên tập dữ liệu mẫu
-- Các bước thực hiện đã được trình bày kỹ trong khoá luận tốt nghiệp
+- `uniform_data.npy`: Random data based on a uniform distribution, used for more objective evaluation of algorithm performance and to avoid biased random data  
+- `minibatch_draw.py`: Visualizes the clustering process and UAV positioning using the MiniBatchKMeans algorithm on a sample dataset  
+- All steps are thoroughly explained in the graduation thesis document
 
 ## Made with passion by [Nga Phuong Nguyen]
